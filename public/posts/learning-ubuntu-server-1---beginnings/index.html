@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Learning Ubuntu Server 1 - Beginnings | </title>
+<meta property="og:title" content="Learning Ubuntu Server 1 - Beginnings | " />
+<meta name="twitter:title" content="Learning Ubuntu Server 1 - Beginnings | " />
+<meta itemprop="name" content="Learning Ubuntu Server 1 - Beginnings | " />
+<meta name="application-name" content="Learning Ubuntu Server 1 - Beginnings | " />
+<meta property="og:site_name" content="Five Eye Tea" />
+
+<meta name="description" content="Tech, tea, privacy.">
+<meta itemprop="description" content="Tech, tea, privacy." />
+<meta property="og:description" content="Tech, tea, privacy." />
+<meta name="twitter:description" content="Tech, tea, privacy." />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-us" href="//localhost:1313/posts/learning-ubuntu-server-1---beginnings/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-10-15T00:00:00Z />
+    <meta property="article:published_time" content=2025-10-15T00:00:00Z />
+    <meta property="og:url" content="//localhost:1313/posts/learning-ubuntu-server-1---beginnings/" />
+
+    
+    <meta property="og:article:author" content="Jacob Fields" />
+    <meta property="article:author" content="Jacob Fields" />
+    <meta name="author" content="Jacob Fields" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Learning Ubuntu Server 1 - Beginnings",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-10-15",
+        "description": "",
+        "wordCount":  2331 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-10-15",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": ""
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.150.0">
+
+    
+    <meta property="og:url" content="//localhost:1313/posts/learning-ubuntu-server-1---beginnings/">
+  <meta property="og:title" content="Learning Ubuntu Server 1 - Beginnings">
+  <meta property="og:description" content="I’ve gradually purchased more and more courses on Packt for side projects, such as learning Linux or machine learning. Back in August, I worked on one that taught me how to install, configure and use Arch Linux, which was the last major wall that I was facing when it comes to my learning of the basics of the various major Linux distribution types.
+Now, I’m moving on to something a bit more practical: Ubuntu Server Mastery - Real-World Linux Admin Skills by the same course author, Dan Mill. In this blog post series, “Learning Ubuntu Server”, I will be documenting my progress through this course to show what I’ve learned and what I’ve reinforced.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-15T00:00:00+00:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learning Ubuntu Server 1 - Beginnings">
+  <meta name="twitter:description" content="I’ve gradually purchased more and more courses on Packt for side projects, such as learning Linux or machine learning. Back in August, I worked on one that taught me how to install, configure and use Arch Linux, which was the last major wall that I was facing when it comes to my learning of the basics of the various major Linux distribution types.
+Now, I’m moving on to something a bit more practical: Ubuntu Server Mastery - Real-World Linux Admin Skills by the same course author, Dan Mill. In this blog post series, “Learning Ubuntu Server”, I will be documenting my progress through this course to show what I’ve learned and what I’ve reinforced.">
+
+
+    
+
+    <link rel="canonical" href="//localhost:1313/posts/learning-ubuntu-server-1---beginnings/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="//localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="//localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Learning Ubuntu Server 1 - Beginnings</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-10-15T00:00:00&#43;00:00" itemprop="datePublished"> Oct 15, 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>I&rsquo;ve gradually purchased more and more courses on Packt for side projects, such as learning Linux or machine learning. Back in August, I worked on one that taught me how to install, configure and use Arch Linux, which was the last major wall that I was facing when it comes to my learning of the basics of the various major Linux distribution types.</p>
+<p>Now, I&rsquo;m moving on to something a bit more practical: <strong>Ubuntu Server Mastery - Real-World Linux Admin Skills</strong> by the same course author, Dan Mill. In this blog post series, &ldquo;Learning Ubuntu Server&rdquo;, I will be documenting my progress through this course to show what I&rsquo;ve learned and what I&rsquo;ve reinforced.</p>
+<h1 id="installation">Installation</h1>
+<p>The beginning of the course covers the basic concepts: what Ubuntu Server is, what it&rsquo;s used for, and what skills it can help you develop. It then progressed toward downloading the distribution&rsquo;s ISO, setting it up in your virtualization software and then going through the installation process.</p>
+<p>I&rsquo;ve already set up countless virtual machines on my workstation before, so this part was pretty much a breeze. However, there was one key difference between this and the course: in the course, he installs his virtual machine with Hyper-V Manager on Windows, while I installed it on VirtualBox (my preferred VM manager).</p>
+<p>Even the installation process wasn&rsquo;t difficult for me, as I&rsquo;ve gotten used to utilizing CLIs and TUIs over the past couple years of learning Linux. However, it was good to have something to follow along with and ensure I was installing it correctly.</p>
+<h1 id="ubuntu-networking-fundamentals">Ubuntu Networking Fundamentals</h1>
+<p>The first topic Dan Mill covers in this course is how to handle networking on Ubuntu Server. He explains the crucial importance of networking with servers. He then moved on to some of the networking tools present on Ubuntu Server.</p>
+<h2 id="finding-the-ip">Finding the IP</h2>
+<p>Command #1 was <code>ip addr</code>. He explains that the loopback address is mostly used for troubleshooting and that the address we want to look at right now is under <code>eth0</code>, though, on my VM, it was listed as <code>enp0s3</code> which, upon <a href="https://askubuntu.com/questions/704035/no-eth0-listed-in-ifconfig-a-only-enp0s3-and-lo">a bit of research</a>, is a &ldquo;<a href="https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/">Predictable Network Interface Name</a>&rdquo; for the network card. <code>eth0</code> is the default if the hardware can&rsquo;t be determined for one reason or another, whereas <code>enp0s3</code> combines <code>en</code> for <strong>ethernet</strong>, <code>p</code> for <strong>PCI location</strong> (PCI location 0), <code>s</code> for <strong>slot number</strong> (slot number 3).</p>
+<p>He also points out the <code>inet</code> IP address listed under <code>enp0s3</code>, of which mine was a Class A IPv4 address with a 24 subnet (255.255.255.0). He also talks about the IPv6 <code>inet</code> address present in the <code>ip addr</code> command but mentioned that this course primarily focuses on IPv4 instead.</p>
+<h2 id="information-on-the-network-interface">Information on the Network Interface</h2>
+<p>Next, he teaches the command <code>lshw -class network</code>, ran as superuser, and runs through some of the fields that are listed.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Explanation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Description</td>
+          <td>Tells the user what the interface is. In this VM, it shows up as &ldquo;Ethernet interface&rdquo; but Dan explains that it may shift to &ldquo;Fiber interface&rdquo; if you&rsquo;re using a fiber connection.</td>
+      </tr>
+      <tr>
+          <td>Logical name</td>
+          <td>Shows the interface logical name again; once again, in my case, it&rsquo;s <code>enp0s3</code>.</td>
+      </tr>
+      <tr>
+          <td>Size</td>
+          <td>Indicates the bandwidth that was negotiated between this device and the uplink device. In my case, it&rsquo;s 1Gbit/s.</td>
+      </tr>
+      <tr>
+          <td>Configuration</td>
+          <td>Lists configuration data for the interface. Dan makes note that you can see what driver version is used by the interface.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="configuring-static-ip">Configuring Static IP</h2>
+<p>Dan starts by explaining what a <strong>static IP</strong> is (&ldquo;a fixed IP address that&rsquo;s manually assigned to a device, such as a server, and it remains constant unless it&rsquo;s manually changed&rdquo;) and compares that to a <strong>dynamic IP</strong> and DHCP. He also explains how the usage of a static IP is crucial for devices such as servers to be accessible by others.</p>
+<p>The next step is to make a backup of the <strong>netplan</strong> file, through the following command: <code>sudo cp /etc/netplan/00-installer-config.yaml 00-installer-config.yaml.copy</code>, which copies the original file and creates a new one with the <code>.copy</code> suffix within the home directory.</p>
+<p>However, when I ran that copy command, it failed, telling me that <code>00-installer-config.yaml</code> didn&rsquo;t exist. I navigated to the <strong>netplan</strong> folder (<code>cd /etc/netplan</code>) to see what, if anything, was in that directory. All I saw was a different YAML file, <code>50-cloud-init.yaml</code>. After I did <a href="https://askubuntu.com/a/1436126">a bit of research</a>, I learned that these two files serve the same purpose but the latter is created by <strong>cloud-init</strong>, rather than the installer.</p>
+<p>I ran the copy command again, but with the altered names&hellip; except, it made the copy in the netplan directory, so I had to move it back to the root directory with <code>sudo mv 50-cloud-init.yaml.copy /home/tenshi</code>.</p>
+<p>There, all good. Now, <em>back to the lesson</em>.</p>
+<p>Next, we open the original YAML file with Nano (<code>sudo nano /etc/netplan/50-cloud-init.yaml</code>). In this file, we set <code>dhcp4</code> to <strong>false</strong>, then add in some extra fields until it looks like this:</p>
+<pre tabindex="0"><code>network:
+	ethernets:
+		enp0s3:
+			dhcp4: false
+			addresses:
+			 - [chosen IP]
+			routes:
+			 - to: default
+			   via: [another chosen IP]
+			nameservers:
+			 addresses: [9.9.9.9,1.1.1.1]
+	version: 2
+			 
+</code></pre><p>The addresses will be different according to your own subnet configuration. In the <code>routes</code> section, you&rsquo;re setting up the default gateway (router). This is followed by the <code>nameservers</code> segment where you place a default and secondary DNS resolver (in my case, I went with Quad9 as the default and Cloudflare as the backup).</p>
+<p>After saving the file in Nano, we enter the command <code>sudo netplan apply</code> to save the configuration. If you run <code>ip addr</code> again, it should display the static IP you&rsquo;ve configured. I tested the connection with <code>ping google.com</code> and it went through smoothly.</p>
+<h2 id="ip-route-table">IP Route Table</h2>
+<p>To take a look at the IP route table, use the command <code>ip route show</code>. At this point, you should only have one: the one you set up in the <strong>netplan</strong> file. This means all traffic will be routed through that IP address. However, if you want to create a static route for a more complex network, use the command <code>sudo ip route add [target subnet] via [next hop address, probably router]</code>.</p>
+<h2 id="static-hostnames-for-ips">Static Hostnames for IPs</h2>
+<p>In this portion of the chapter, we learn that you can manually set up a hostname for IP addresses. For this, we open the <strong>hosts</strong> file via <code>sudo nano /etc/hosts</code>.</p>
+<p>There will already be a few hostnames in the file. To add a hostname to your router address, for example, you would go to a new line, enter in the router&rsquo;s IP and follow it with a single space and <code>router</code>. In other words:</p>
+<pre tabindex="0"><code>127.0.0.1 localhost
+127.0.1.1 innersphere
+
+[router IP] router
+# The following lines are desirable for IPv6 capable hosts
+...
+</code></pre><p>This would allow you to run something like <code>ping router</code> instead of having to type the router IP every time. This is also useful if you don&rsquo;t have a DNS server set up.</p>
+<h2 id="further-troubleshooting-commands">Further Troubleshooting Commands</h2>
+<p>To conclude the networking segment, Dan teaches two more commands:</p>
+<ul>
+<li><code>tracepath</code>: similar to <code>tracert</code> on Windows, it displays the various hops the connection takes to get to a destination</li>
+<li><code>dig</code>: lists DNS details on a specific domain name</li>
+</ul>
+<h1 id="updating-and-upgrading-ubuntu-server">Updating and Upgrading Ubuntu Server</h1>
+<p>This portion of the course was easy for me because I already use the CLI to keep my systems up to date (at least, in most cases). Even so, I&rsquo;ll do a quick run of what was covered:</p>
+<p><code>apt-get update</code></p>
+<p>This command retrieves the newest package information from the repositories installed on the server. He covers how to access the sources list through <code>nano /etc/apt/sources.list</code>. The CLI sources list was the one major thing in this section that I <em>didn&rsquo;t</em> already know how to access before this course.</p>
+<p>This command makes sure that you have the latest information on package updates, including security patches.</p>
+<p><code>apt-get upgrade</code></p>
+<p>This command installs all updates that were revealed through last time the <code>apt-get update</code> command was run. This can potentially cause compatibility issues and stability problems, thus you want to try to <em>test updates in a staging environment</em> before rolling them out to a live production server.</p>
+<p>That being said, when I personally run <code>update</code> &amp; <code>upgrade</code> commands, I usually drop the <code>-get</code> and run this command <code>sudo apt update &amp;&amp; sudo apt upgrade</code> to get it all finished in one go.</p>
+<h1 id="setup-ssh-and-ssh-security">Setup SSH and SSH Security</h1>
+<p>To round out this chapter, Dan discusses that SSH (<strong>S</strong>ecure <strong>Sh</strong>ell) allows encrypted, remote access to a system&rsquo;s command line and runs through basic setup and security. First up, he had us ensure OpenSSH Server was installed during the setup phase, but he explains how you can use <strong>apt</strong> to install it if the system doesn&rsquo;t already have it installed.</p>
+<p>Next up, he shows us how to access the SSH configuration file at <code>/etc/ssh/sshd_config</code>, and shows us how to check the status of the SSH service through <strong>systemctl</strong>: <code>sudo systemctl status ssh</code>. If it&rsquo;s not already running, <code>sudo systemctl start ssh</code> should get it up and running.</p>
+<p>Next, we will cover SSH security. Dan mentions that the first thing you should do when setting up SSH is to switch the port from the default (<strong>port 22</strong>) to something non-standard, but that you want something that&rsquo;s not already being used by other applications. The purpose is to protect against automated attacks that run against SSH configured for the default port 22. For this lesson, he has us switch to <strong>port 2250</strong> by opening the config file with <code>nano</code> as a superuser. First, unhash the line that says <code>Port 22</code>, then change the <strong>22</strong> to <strong>2250</strong>. Once the changes are saved, you have to restart the SSH server with <code>sudo systemctl restart ssh</code>.</p>
+<p>Following the port change, the next suggestion he makes is to disable logging in as root over SSH. The reason is to contain potential damage if an attacker manages to SSH into your system. To do this, open the config file with <code>sudo nano</code> again and look for the line that says <code>PermitRootLogin</code> and change the value to <code>no</code>. This will force anyone with SSH access to log in with a user account and use the <code>sudo</code> command to do anything with elevated privileges.</p>
+<p>Finally, lock down your SSH traffic. This will prevent traffic from being forwarded directly from your router to the system, which could present risk of brute force attacks. In other words, you don&rsquo;t want to leave any sort of remote management ports (such as 22) open to the internet unless you lock it down to source IPs/networks that you trust. The reason for this is because an attacker gaining remote access to your server via SSH can allow them to gain lateral movement within your network to have easier access in attacking other systems on your network.</p>
+<p>He also mentions <strong>key-based authentication</strong> which is more secure than password authentication, since it requires both the password and a private key to log in. To do this, you&rsquo;ll need to install software on the SSH server and client to generate a public-private key pair between the two systems. <strong>Multi-factor authentication</strong> is also an option, but for this course, Dan suggests sticking with a basic password login.</p>
+<p>Following this advice, Dan talks about using PuTTY to SSH into the virtual machine but, for whatever reason, I simply could not figure out why I couldn&rsquo;t get access. Every time I&rsquo;d connect (after many tweaks), it simply kept refusing the connection. I&rsquo;m really not sure why. I can ping internet servers through the virtual machine, so the IPs set up during the networking portion must be correctly configured, but PuTTY simply does not want to connect. It refuses the connection or times out, no matter what I tweak&hellip; I double-checked the configuration for the static IP, I made sure my SSH configuration was accurate, I modified <strong>ufw</strong> rules for good measure (even though it was disabled), but it simply refuses to connect. I read up on the issue and found someone mention that the only way they solved this issue was to reinstall Ubuntu Server without including OpenSSH in the installation process, choosing to install it after the distribution is fully installed. Seeing how this is just a virtual machine for practice, I don&rsquo;t plan to use SSH so it&rsquo;s not a problem for now, but this may be problematic for me down the road when I set up my home lab server.</p>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>Aside from the final part of the chapter, this one went well. I&rsquo;m just not sure what went wrong in the SSH part, whether it was something related to router or firewall settings, or what. Networking isn&rsquo;t my strong suit by any means but I&rsquo;m proficient enough to troubleshoot issues and that&rsquo;s why this has me so stumped: nothing seems to be making any sense whatsoever. Even AI couldn&rsquo;t help me figure it out. This is <em>exactly why I want to find a mentor or two</em> to go to when I run into issues like these that I can&rsquo;t just troubleshoot on my own.</p>
+<p>As part of the final moments of this chapter of the course, I also did what I normally do on all Linux installations: I installed both <strong>Ranger file manager</strong> and <strong>btop</strong>. The latter is basically just a much more visually-appealing and readable version of the <code>top</code> command, whereas the former makes navigating the Linux file system a hundred times easier. In fact, I honestly don&rsquo;t know why anyone would use the classic Linux command line navigation if Ranger is an option. It makes things so much faster and more efficient, without sacrificing any noticeable amount of speed that traditional command line navigation offers. I also installed <strong>neofetch</strong> for good measure, as it&rsquo;s a good way to quickly grab hardware information.</p>
+<p>All of that being said, this was a good overview of the early stages of setting up Ubuntu Server. Never in a million years would the 2023 version of me think that I&rsquo;d ever become comfortable using an OS that is all CLI-driven, yet here we are. It&rsquo;s a reminder:</p>
+<p><em><strong>Keep learning, keep pushing your boundaries and fight the discouragement. You can do it!</strong></em></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/FiveEyeTea" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://x.com/FiveEyeTea" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 Jacob Fields.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script async src="//localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

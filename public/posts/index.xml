@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Discouragement - Lessons from Career Failures</title>
+      <link>//localhost:1313/posts/on-discouragement---lessons-from-career-failures/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/on-discouragement---lessons-from-career-failures/</guid>
+      
+      <description>&lt;p&gt;I&amp;rsquo;ve had no shortage of disappointments in my adult life. In fact, I&amp;rsquo;ve tried three separate careers before now, and every one of them has failed miserably. I&amp;rsquo;m on my fourth career attempt and have run into the same sorts of road blocks I ran into with my previous career attempts, so what keeps me going? It&amp;rsquo;s not as cut-and-dry as one might suspect, which surprises even me.&lt;/p&gt;
+&lt;h1 id=&#34;some-background&#34;&gt;Some Background&lt;/h1&gt;
+&lt;p&gt;In high school, I was passionate and determined to become a game developer. In almost all of my spare time back then, I&amp;rsquo;d do a combination of &lt;strong&gt;making&lt;/strong&gt; games and &lt;strong&gt;modding&lt;/strong&gt; existing games. I was working on an open world 2D adventure game with an art style that (unintentionally) resembled a more colorful &lt;em&gt;Ultima 5&lt;/em&gt;, but with intentions to mirror the free, open exploration of my favorite game series, &lt;em&gt;The Elder Scrolls&lt;/em&gt;. I also did experiment with other games, including a marble maze game made in GameMaker (specifically 8.1, in the days before they moved to the GameMaker Studio branch). I had every intention to work for one of my then-favorite studios, from Jagex in the United Kingdom, to Bethesda in Maryland&amp;hellip; but eventually, I decided I wanted to start my own studio instead.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Frustrations, Humblings and Revelations - A Second Beginning on Linux</title>
+      <link>//localhost:1313/posts/frustrations-humblings-and-revelations---a-second-beginning-on-linux/</link>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/frustrations-humblings-and-revelations---a-second-beginning-on-linux/</guid>
+      
+      <description>&lt;p&gt;Back in August, I ran through my thought processes on picking a Linux distribution to use on my primary PC. By the end of that lengthy blog post, I had talked about how I was leaning toward &lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro&lt;/a&gt;, with &lt;a href=&#34;https://fedoraproject.org/&#34;&gt;Fedora&lt;/a&gt; as a possible secondary option. Much of my reasoning for leaning toward Manjaro had to do with a blend of features, a middle ground on the rolling release through the Manjaro Stable branch and so forth. Well, I did decide to go for Manjaro as my primary workstation distro after all and, well… what ensued was a series of frustration after frustration that led me to some degree of discouragement and humbling. Let&amp;rsquo;s talk about it.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Learning Ubuntu Server 1 - Beginnings</title>
+      <link>//localhost:1313/posts/learning-ubuntu-server-1---beginnings/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/learning-ubuntu-server-1---beginnings/</guid>
+      
+      <description>&lt;p&gt;I&amp;rsquo;ve gradually purchased more and more courses on Packt for side projects, such as learning Linux or machine learning. Back in August, I worked on one that taught me how to install, configure and use Arch Linux, which was the last major wall that I was facing when it comes to my learning of the basics of the various major Linux distribution types.&lt;/p&gt;
+&lt;p&gt;Now, I&amp;rsquo;m moving on to something a bit more practical: &lt;strong&gt;Ubuntu Server Mastery - Real-World Linux Admin Skills&lt;/strong&gt; by the same course author, Dan Mill. In this blog post series, &amp;ldquo;Learning Ubuntu Server&amp;rdquo;, I will be documenting my progress through this course to show what I&amp;rsquo;ve learned and what I&amp;rsquo;ve reinforced.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Navigating Linux Distros - My Personal Journey</title>
+      <link>//localhost:1313/posts/navigating-linux-distros---my-personal-journey/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/navigating-linux-distros---my-personal-journey/</guid>
+      
+      <description>&lt;p&gt;I, like many others, made the decision to switch to Linux for my primary PC following the &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-10-support-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281&#34;&gt;death of Windows 10&lt;/a&gt;. I already take a lot of issues with modern Windows as it is, and decided I wasn&amp;rsquo;t willing to use the privacy nightmare that is Windows 11 (excluding one of my side systems, which I&amp;rsquo;ll talk about in future posts). Plus, with my ongoing career change into IT and cybersecurity, I knew Linux was going to be a necessity so I have about three years of experience experimenting with it at this point.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
